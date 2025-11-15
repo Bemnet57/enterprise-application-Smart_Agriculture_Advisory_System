@@ -37,25 +37,25 @@ Generic because any system could use it (not agriculture-specific).
 Handled entirely by Keycloak for authentication, SSO, and RBAC.
 Generic across all enterprise systems.
 ## 3. Bounded Contexts (at least 3 within the Core Domain)
-A. Farm Context
-Responsibility:
-Manages farmer profiles, farm fields, soil type, and geo-coordinates.
-Acts as the authoritative source for farm-related data.
-B. Crop Context
-Responsibility:
-Handles crop fields, planting events, growth stages, and harvest results.
-Defines aggregates such as CropCycle, GrowthStage, and YieldRecord.
+A. Farm Context  
+Responsibility:  
+Manages farmer profiles, farm fields, soil type, and geo-coordinates.  
+Acts as the authoritative source for farm-related data.  
+B. Crop Context  
+Responsibility:  
+Handles crop fields, planting events, growth stages, and harvest results.  
+Defines aggregates such as CropCycle, GrowthStage, and YieldRecord.  
 
 
-C. Advisory Context (Core Context)
-Responsibility:
-Generates recommendations (irrigation frequency, fertilizer schedule, pest control).
+C. Advisory Context (Core Context)  
+Responsibility:  
+Generates recommendations (irrigation frequency, fertilizer schedule, pest control).  
 
 
-Consumes events from Farm and Crop contexts.
+Consumes events from Farm and Crop contexts.  
 
 
-Publishes advisory events to Notification context.
+Publishes advisory events to Notification context.  
 
 
 
