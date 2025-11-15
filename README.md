@@ -40,7 +40,9 @@ Generic across all enterprise systems.
 A. Farm Context  
 Responsibility:  
 Manages farmer profiles, farm fields, soil type, and geo-coordinates.  
-Acts as the authoritative source for farm-related data.  
+Acts as the authoritative source for farm-related data. 
+
+
 B. Crop Context  
 Responsibility:  
 Handles crop fields, planting events, growth stages, and harvest results.  
@@ -50,11 +52,7 @@ Defines aggregates such as CropCycle, GrowthStage, and YieldRecord.
 C. Advisory Context (Core Context)  
 Responsibility:  
 Generates recommendations (irrigation frequency, fertilizer schedule, pest control).  
-
-
 Consumes events from Farm and Crop contexts.  
-
-
 Publishes advisory events to Notification context.  
 
 
